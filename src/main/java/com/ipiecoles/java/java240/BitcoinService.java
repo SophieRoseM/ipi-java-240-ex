@@ -7,6 +7,7 @@ public class BitcoinService {
     private Double rate = null;
     private Boolean forceRefresh = false;
     private WebPageManager webPageManager;
+    private ProduitManager produitManager;
 
     public WebPageManager getWebPageManager() {
         return webPageManager;
@@ -26,6 +27,7 @@ public class BitcoinService {
             System.out.println("Récupération du cours du bitcoin en cache...");
             return rate;
         }
+
 
         System.out.println("Récupération du cours du bitcoin sur site distant");
  //       WebPageManager webPageManager = new WebPageManager();
